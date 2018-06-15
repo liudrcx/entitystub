@@ -1,5 +1,16 @@
 .gradle
 /build/
+.DS_Store
+build/
+.gradle/
+.idea/
+/out/
+.classpath
+.project
+.settings/
+bin/
+test-output/
+
 
 # Ignore Gradle GUI config
 gradle-app.setting
