@@ -7,19 +7,19 @@ Please refer to EntityStubTest.java to get more examples.
 
 ```
 Student stu = 
-      createEntity(
-        Student.class,
+  createEntity(
+    Student.class,
+    entity(
+      field("name", "Allen"),
+      field("age", 25),
+      field(
+        "classroom", 
         entity(
-          field("name", "Allen"),
-          field("age", 25),
-          field(
-            "classroom", 
-            entity(
-              field("name", "cs1")
-            ) 
-          )
-        )
-      );
+          field("name", "cs1")
+        ) 
+      )
+  )
+);
    
 assertEquals(stu.getName(), "Allen");
 assertEquals(stu.getAge(), 25);
@@ -36,17 +36,17 @@ stu.setAge(27);
 stu.setClassroom(room);
     
 assertEntity(
-      stu, 
+  stu, 
+  entity(
+    field("name", "Allen"),
+    field("age", 27),
+    field(
+      "classroom", 
       entity(
-        field("name", "Allen"),
-        field("age", 27),
-        field(
-            "classroom", 
-            entity(
-               field("name", "cs1")
-            )
-        )
+        field("name", "cs1")
       )
+    )
+  )
 );
    
 ```
