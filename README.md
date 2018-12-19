@@ -1,4 +1,4 @@
-# entitystub
+# EntityStub
 
 This is a tool to create and assert Java POJO entities for testing purpose. 
 
