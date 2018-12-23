@@ -2,7 +2,7 @@
 
 A tool to create and assert Java POJO entities for testing purpose. 
 
-Please refer to EntityStubTest.java to get more examples.
+Please refer to EntityStubTest.java to get more examples. 
 
 1. create entity
 ```
